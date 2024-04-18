@@ -3,6 +3,8 @@ import { Input } from '../ui/input'
 import ThemeSwitch from './theme-switch'
 import { conversations } from '~/dummy-data/db'
 import Conversation from './conversation'
+import { UserButton } from '@clerk/nextjs'
+import { SignInButton, SignOutButton, SignedIn, SignedOut } from '@clerk/clerk-react'
 
 const LeftPanel = () => {
     return (
@@ -10,7 +12,8 @@ const LeftPanel = () => {
             <div className="sticky top-0 bg-left-panel z-10">
                 {/* Header */}
                 <div className="flex justify-between bg-gray-primary p-3 items-center">
-                    <User size={24} />
+                    {/* <User size={24} /> */}
+                    <UserButton />
 
                     <div className="flex items-center gap-3">
                         <MessageSquareDiff size={20} /> {/* TODO: This line will be replaced with <UserListDialog /> */}
