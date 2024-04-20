@@ -10,6 +10,7 @@ const Conversation = ({ conversation }: { conversation: any }) => {
     const conversationImage = conversation.groupImage ?? conversation.image
     const conversationName = conversation.groupName ?? conversation.name
     const lastMessage = conversation.lastMessage
+
     const lastMessageType = lastMessage?.messageType
     const me = useQuery(api.users.getMe)
 

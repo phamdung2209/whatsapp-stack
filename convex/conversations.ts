@@ -90,7 +90,7 @@ export const getMyConversations = query({
                 return {
                     ...userDetails,
                     ...conversation,
-                    lastMassage: lastMessage[0] || null,
+                    lastMessage: lastMessage[0] || null,
                 }
             }),
         )
