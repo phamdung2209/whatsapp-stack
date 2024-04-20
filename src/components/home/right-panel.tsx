@@ -41,6 +41,11 @@ const RightPanel = () => {
             </div>
             {/* CHAT MESSAGES */}
             <MessageContainer />
+            <video
+                className="w-72"
+                src={'https://intent-warthog-793.convex.cloud/api/storage/e62e64ef-7dae-4ff8-a782-04fd8500e183'}
+                controls
+            />
 
             {/* INPUT */}
             <MessageInput />
